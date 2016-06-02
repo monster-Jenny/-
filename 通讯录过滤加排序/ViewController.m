@@ -10,6 +10,8 @@
 #import "PersonModel.h"
 #import "ChineseString.h"
 
+#import "PushViewController.h"
+
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
@@ -116,6 +118,9 @@
     PersonModel * p20 = [[PersonModel alloc] init];
     p20.name = @"曾大帅";
     [self.firstDataArray addObject:p20];
+    PersonModel * p21 = [[PersonModel alloc] init];
+    p21.name = @"贺立";
+    [self.firstDataArray addObject:p21];
     
 //    self.firstDataArray = [NSMutableArray arrayWithArray:@[@"毛敏",@"赵晓倩",@"史荒原",@"何立春",@"何必生",@"赵大傻",@"刘乔",@"刘帝",@"王二荣",@"何处",@"monster",@"杨明",@"Yang",@"ao",@"bi",@"dd",@"hhaha"]];
 //    self.indexArray = [[NSMutableArray alloc] init];
@@ -181,6 +186,9 @@
     NSLog(@"---->%@",mo.name);
     UIAlertController * alertCtl = [UIAlertController alertControllerWithTitle:@"" message:mo.name preferredStyle:UIAlertControllerStyleAlert];
     NSLog(@"%@",alertCtl);
+//    PushViewController * push = [[PushViewController alloc] init];
+//    push.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    [self.navigationController pushViewController:push animated:NO];
 }
 
 

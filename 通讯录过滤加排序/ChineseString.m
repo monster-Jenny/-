@@ -37,12 +37,14 @@
     NSMutableArray * tempArray = [self returnSortedArrayWithArray:originalArray];
     NSMutableArray *LetterResult = [NSMutableArray array];
     NSMutableArray *item = [NSMutableArray array];
+    NSMutableArray *nameArray = [NSMutableArray array];
     NSString *tempString;
     //拼音分组
     for (ChineseString * object in tempArray) {
         
         NSString *tpinyin = [object.pinyin substringToIndex:1];
         PersonModel *person = object.model;
+        
         //不同
         if(![tempString isEqualToString:tpinyin])
         {
@@ -58,7 +60,33 @@
             [item  addObject:person];
         }
     }
-    return LetterResult;
+    
+    //按照姓氏进行排序
+    NSMutableArray * result = [NSMutableArray array];
+    for (NSMutableArray * arr in LetterResult) {
+        //对每一个array里面的名字按照姓氏排序
+        NSMutableArray * subresult = [NSMutableArray array];
+        for (int i = 0; i < arr.count; i ++) {
+            PersonModel * PI = arr[i];
+            nameArray = [NSMutableArray array];
+            [nameArray addObject:PI];
+            for (int j = i + 1; j < arr.count; j ++) {
+                PersonModel * PJ = arr[j];
+                if ([[PI.name substringToIndex:1] isEqualToString:[PJ.name substringToIndex:1]]) {
+                    [nameArray addObject:PJ];
+                    [arr removeObject:PJ];
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            [subresult addObjectsFromArray:nameArray];
+        }
+        [result addObject:subresult];
+    }
+    
+    return result;
 }
 
 + (NSMutableArray *)returnSortedArrayWithArray:(NSMutableArray *)originalArray

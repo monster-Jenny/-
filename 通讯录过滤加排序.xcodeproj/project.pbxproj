@@ -10,6 +10,7 @@
 		8D6822461CED5D6900817BA6 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6822451CED5D6900817BA6 /* ChineseString.m */; };
 		8D6822491CED5D9200817BA6 /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6822481CED5D9200817BA6 /* pinyin.m */; };
 		8D68224C1CED6D8E00817BA6 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D68224B1CED6D8E00817BA6 /* PersonModel.m */; };
+		8D8E667D1D0056FD001E35DC /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E667C1D0056FD001E35DC /* PushViewController.m */; };
 		8DAB09D01CEB14BB0063424C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAB09CF1CEB14BB0063424C /* main.m */; };
 		8DAB09D31CEB14BB0063424C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAB09D21CEB14BB0063424C /* AppDelegate.m */; };
 		8DAB09D61CEB14BB0063424C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAB09D51CEB14BB0063424C /* ViewController.m */; };
@@ -44,6 +45,8 @@
 		8D6822481CED5D9200817BA6 /* pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinyin.m; sourceTree = "<group>"; };
 		8D68224A1CED6D8E00817BA6 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		8D68224B1CED6D8E00817BA6 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		8D8E667B1D0056FD001E35DC /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		8D8E667C1D0056FD001E35DC /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
 		8DAB09CB1CEB14BB0063424C /* 通讯录过滤加排序.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "通讯录过滤加排序.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAB09CF1CEB14BB0063424C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8DAB09D11CEB14BB0063424C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				8D6822451CED5D6900817BA6 /* ChineseString.m */,
 				8D6822471CED5D9200817BA6 /* pinyin.h */,
 				8D6822481CED5D9200817BA6 /* pinyin.m */,
+				8D8E667B1D0056FD001E35DC /* PushViewController.h */,
+				8D8E667C1D0056FD001E35DC /* PushViewController.m */,
 				8DAB09D71CEB14BB0063424C /* Main.storyboard */,
 				8DAB09DA1CEB14BB0063424C /* Assets.xcassets */,
 				8DAB09DC1CEB14BB0063424C /* LaunchScreen.storyboard */,
@@ -290,6 +295,7 @@
 				8D6822461CED5D6900817BA6 /* ChineseString.m in Sources */,
 				8DAB09D61CEB14BB0063424C /* ViewController.m in Sources */,
 				8DAB09D31CEB14BB0063424C /* AppDelegate.m in Sources */,
+				8D8E667D1D0056FD001E35DC /* PushViewController.m in Sources */,
 				8DAB09D01CEB14BB0063424C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
