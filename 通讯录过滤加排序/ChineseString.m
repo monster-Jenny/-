@@ -61,7 +61,7 @@
         }
     }
     
-    //按照姓氏进行排序
+    //按照姓氏进行排序（因为现在大部分人名字都是两个字，三个字，所以可以满足要求，当大部分人名字是四个字甚至更长的时候，这个排序就不能满足要求了）
     NSMutableArray * result = [NSMutableArray array];
     for (NSMutableArray * arr in LetterResult) {
         //对每一个array里面的名字按照姓氏排序
@@ -75,6 +75,7 @@
                 if ([[PI.name substringToIndex:1] isEqualToString:[PJ.name substringToIndex:1]]) {
                     [nameArray addObject:PJ];
                     [arr removeObject:PJ];
+                    j --;
                 }
                 else
                 {
@@ -85,7 +86,6 @@
         }
         [result addObject:subresult];
     }
-    
     return result;
 }
 
